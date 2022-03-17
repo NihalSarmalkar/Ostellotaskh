@@ -6,17 +6,21 @@ import {
    
     
   } from "@material-ui/icons";
-  import NotificationsIcon from '@material-ui/icons/Notifications';
-  import AssessmentIcon from '@material-ui/icons/Assessment';
-  import TimelineIcon from '@material-ui/icons/Timeline';
-  import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+  import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+  import CreditCardIcon from '@material-ui/icons/CreditCard';
+  import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+  import EventIcon from '@material-ui/icons/Event';
+  import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
 const LeftContainerdiv = styled.div`
-    flex:1.5 ;
+    flex:3 ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     
-    height:100vh ;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(54, 45, 45, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    height:120vh ;
+    /* -webkit-box-shadow: 0px 0px 16px -8px rgba(54, 45, 45, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68); */
     @media (max-width: 768px) {
         height:115vh ;
     }
@@ -31,39 +35,49 @@ const ItemList = styled.div`
     
 `
 
-const ItemList2 = styled.div`
-    display:flex ;
-    justify-content: center ;
-    align-items:center ;
-    margin-top: 350px ;
-   
-    flex-direction: column ;
-    
-    
-`
+
 
 const ItemComponent = styled.div`
     display:flex ;
-    justify-content: center ;
-    align-items:center ;
-    padding: 10px ;
     
-    width:80px ;
-    height:80px ;
-    margin:10px ;
+    align-items:center ;
+    padding: 15px 50px ;
+    
+    width:200px ;
+
+    margin:12px ;
     color: grey;
-    flex-direction: column ;
-    &:hover {
-        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-        color: #1976d2 ;
+
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    color: rgb(125 35 224); ;
+    &:hover{
+        color: white ;
+        background-color: rgb(125 35 210);
+        
+
     }
+    
 
     
 `
 
 const ItemComponentHeading = styled.h2`
-    font-size:10px ;
+    font-size:18px ;
+    font-weight: 500;
+    padding-left: 25px;
+    color:black ;
+    width:100%;
+    height: 100%;
+    &:hover{
+        color: white ;
+        
+        
+
+    }
+
 `
 
 const LeftContainer =()=>{
@@ -71,44 +85,54 @@ const LeftContainer =()=>{
         <LeftContainerdiv>
             <ItemList>
                 <ItemComponent>
-                 <Dashboard style={{ fontSize: 40}} />
+                 <CreditCardIcon style={{ fontSize: 40}} />
                  <ItemComponentHeading>
-                     Dashboard
+                     Card
                  </ItemComponentHeading>
                 </ItemComponent>
 
                 <ItemComponent>
-                 <TimelineIcon style={{ fontSize: 40}}/>
+                 <CreditCardIcon style={{ fontSize: 40}}/>
                  <ItemComponentHeading>
-                     Trading
+                     UPI
                  </ItemComponentHeading>  
                 </ItemComponent>
 
                 <ItemComponent>
-                 <NotificationsIcon style={{ fontSize: 40}}/>
+                 <CreditCardIcon style={{ fontSize: 40}}/>
                  <ItemComponentHeading>
-                     Notifications
+                     PayTM
                  </ItemComponentHeading>
                 </ItemComponent>
 
                 <ItemComponent>
-                 <AssessmentIcon style={{ fontSize: 40}}/>
+                 <AccountBalanceIcon style={{ fontSize: 40}}/>
                  <ItemComponentHeading>
-                     Analytics
+                     Net Banking
                  </ItemComponentHeading>
                 </ItemComponent>
+                <ItemComponent>
+                 <AccountBalanceWalletIcon style={{ fontSize: 40}}/>
+                 <ItemComponentHeading>
+                     Mobile Wallets
+                 </ItemComponentHeading>
+                </ItemComponent>
+                <ItemComponent>
+                 <EventIcon style={{ fontSize: 40}}/>
+                 <ItemComponentHeading>
+                     EMI
+                 </ItemComponentHeading>
+                </ItemComponent>
+                <ItemComponent>
+                 <AttachMoneyIcon style={{ fontSize: 40}}/>
+                 <ItemComponentHeading>
+                     No-cost loan
+                 </ItemComponentHeading>
+                </ItemComponent>
+               
 
             </ItemList>
-            <ItemList2>
-                
-                <ItemComponent>
-                 <ExitToAppIcon style={{ fontSize: 40}}/>
-                 <ItemComponentHeading>
-                     Analytics
-                 </ItemComponentHeading>
-                </ItemComponent>
-
-            </ItemList2>
+            
         </LeftContainerdiv>
     )
 }
