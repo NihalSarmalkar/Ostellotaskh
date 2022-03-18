@@ -4,6 +4,7 @@ import FileCopyIcon from '@material-ui/icons/FileCopy';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 
+
 const RightContainerdiv = styled.div`
   
     flex:3 ;
@@ -45,9 +46,9 @@ const UpperInfoPartDiv = styled.div`
     width:100% ;
     height:100% ;
     padding: 20px 35px;
-    border-radius: 25px;
+    border-radius: 20px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 26px -20px #9d00de;
     @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -62,7 +63,7 @@ const UpperInfoPartDiv = styled.div`
 `
 
 const UpperInfoPartDivHeading = styled.h4`
-    margin: 10px;
+    margin: 5px;
     font-size:18px ;
     font-weight: 400;
 
@@ -72,7 +73,7 @@ const UpperInfoPartDivHeading = styled.h4`
   
 `
 const UpperInfoPartDivMainHeading = styled.h4`
-    margin: 10px;
+    margin: 5px;
     font-size:22px ;
     font-weight: 600;
 
@@ -119,9 +120,9 @@ const Referalcodecontainer = styled.div`
     width:100% ;
     height:100% ;
     padding: 20px 35px;
-    border-radius: 25px;
+    border-radius: 20px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 26px -20px #9d00de;
     @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -137,12 +138,13 @@ const Referalcodecontainer = styled.div`
 `
 const ReferalcodecontainerRightDiv = styled.div`
 
-    border: 2px dashed #ff6600;
+    border: 2px dashed #f2d56e;
     border-radius: 5px;
-    background-color: #fff0e6;
-    color: #a6a6a6;
+    background-color: #fffdee;
+    color: #b6b8b7;
     font-weight: 400;
-    width: 75%;
+    width: 70%;
+    
     
 
 
@@ -158,7 +160,9 @@ font-weight: 400;
 `
 const Referalcodecontainerheading2 = styled.h4`
 margin: 10px;
-font-weight: 400;
+font-weight: 500;
+
+
     
 
 
@@ -168,11 +172,12 @@ font-weight: 400;
 
 
 const ReferalcodecontainerLeftdiv = styled.div`
-    border: 2px solid #009900;
-    border-radius: 15px;
-    color: #009900;
+    border: 2px solid #00f254;
+    border-radius: 10px;
+    color: #46f787;
+    padding: 0px 6px;
     
-    background-color: #e6ffe6;
+  
 
 
     
@@ -189,12 +194,12 @@ const Couponscontainer = styled.div`
     width:100% ;
     height:100% ;
     padding: 10px 35px;
-    border-radius: 25px;
+    border-radius: 10px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    background-color: rgb(228 203 255);
-    color: rgb(125 35 224);
+    background-color: #f4ddfa;
+    color: #a406e0;
 
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 26px -20px #9d00de;
     @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -240,10 +245,10 @@ const BillInfocontainer = styled.div`
     height:100% ;
     padding: 10px 35px;
     border-radius: 25px;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+
     
 
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 26px -20px #9d00de;
     @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -286,7 +291,7 @@ const CompletePaymentButton = styled.div`
     display:flex ;
     flex-direction: column;
     cursor: pointer;
-    background-color:rgb(125 35 210) ;
+    background-color:#9d00de;
     text-align: center;
     color: white;
     font-size: 25px;
@@ -301,8 +306,7 @@ const CompletePaymentButton = styled.div`
     border-radius: 15px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
     
-
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 26px -20px #9d00de;
     @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;

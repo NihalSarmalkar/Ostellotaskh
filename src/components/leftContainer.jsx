@@ -5,12 +5,13 @@ import {
     
    
     
-  } from "@material-ui/icons";
-  import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
-  import CreditCardIcon from '@material-ui/icons/CreditCard';
-  import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-  import EventIcon from '@material-ui/icons/Event';
-  import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+} from "@material-ui/icons";
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+import CreditCardIcon from '@material-ui/icons/CreditCard';
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import EventIcon from '@material-ui/icons/Event';
+import Upi from '../img/UPI.png'
+import Paytm from '../img/paytm.png'
 
 const LeftContainerdiv = styled.div`
     flex:3 ;
@@ -41,18 +42,17 @@ const ItemComponent = styled.div`
     display:flex ;
     
     align-items:center ;
-    padding: 15px 50px ;
+    padding: 12px 30px ;
     
-    width:200px ;
+    width:220px ;
 
     margin:12px ;
     color: grey;
 
     border-radius: 15px;
 
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    color: rgb(125 35 224); ;
+    border: 2px solid #e298f4;
+    color: #9d00de ;
     &:hover{
         color: white ;
         background-color: rgb(125 35 210);
@@ -65,9 +65,11 @@ const ItemComponent = styled.div`
 `
 
 const ItemComponentHeading = styled.h2`
-    font-size:18px ;
+    font-size:20px ;
     font-weight: 500;
     padding-left: 25px;
+   
+    
     color:black ;
     width:100%;
     height: 100%;
@@ -77,6 +79,12 @@ const ItemComponentHeading = styled.h2`
         
 
     }
+
+`
+const ItemComponentIcon = styled.img`
+width:80px;
+height: 30px;
+    
 
 `
 
@@ -92,14 +100,14 @@ const LeftContainer =()=>{
                 </ItemComponent>
 
                 <ItemComponent>
-                 <CreditCardIcon style={{ fontSize: 40}}/>
+                <ItemComponentIcon src={Upi}></ItemComponentIcon>
                  <ItemComponentHeading>
                      UPI
                  </ItemComponentHeading>  
                 </ItemComponent>
 
                 <ItemComponent>
-                 <CreditCardIcon style={{ fontSize: 40}}/>
+                <ItemComponentIcon src={Paytm}></ItemComponentIcon>
                  <ItemComponentHeading>
                      PayTM
                  </ItemComponentHeading>
@@ -123,12 +131,7 @@ const LeftContainer =()=>{
                      EMI
                  </ItemComponentHeading>
                 </ItemComponent>
-                <ItemComponent>
-                 <AttachMoneyIcon style={{ fontSize: 40}}/>
-                 <ItemComponentHeading>
-                     No-cost loan
-                 </ItemComponentHeading>
-                </ItemComponent>
+                
                
 
             </ItemList>

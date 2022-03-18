@@ -1,11 +1,9 @@
 import React from 'react'
-import ProgressBar from "@ramonak/react-progress-bar";
+
 import styled from "styled-components";
-import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import EuroIcon from '@material-ui/icons/Euro';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+
+import LockIcon from '@material-ui/icons/Lock';
+import Lock from '../img/Lock.png'
 
 const MiddleContainerdiv = styled.div`
   
@@ -31,8 +29,9 @@ const MiddleInnerContainerdiv = styled.div`
     height: 100%;
     width: 100%;
     
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 60px -35px #9d00de;
+    box-shadow: 0px 5px 26px -20px #9d00de;
+    
 
    
    
@@ -45,7 +44,7 @@ const MiddleInnerContainerdiv = styled.div`
 `
 const MiddleFormPartDivHeading =styled.h4`
  padding-left: 25px;
- font-size: 15px;
+ font-size: 16px;
  margin: 0px;
  font-weight: 400;
 
@@ -90,10 +89,12 @@ const MiddlePartFormInput = styled.input`
 
 border: none;
 background-color:#f2f2f2;
-padding: 18px 12px;
+padding: 22px 22px;
 margin: 5px;
 border-radius: 10px;
 width: 90%;
+font-size: 18px;
+color: #e8e7e8;
   
   
 `
@@ -112,6 +113,10 @@ padding: 18px 12px;
 margin: 5px;
 border-radius: 10px;
 width: 90%;
+font-size: 18px;
+color: #e8e7e8;
+font-weight: 600px;
+
 
     
   
@@ -148,6 +153,63 @@ const MiddlePartCheckBox = styled.input`
 
   
 `
+const MiddlePartSecureContainer = styled.div`
+display: flex;
+width: 100%;
+height: fit-content;
+align-items: center;
+justify-content: flex-end;
+ 
+
+  
+`
+const MiddlePartSecureDiv = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+margin-right: 65px;
+
+ 
+
+  
+`
+const MiddlePartSecureHeadingDiv = styled.div`
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+
+
+
+ 
+
+  
+`
+const MiddlePartSecureHeading = styled.h4`
+font-size: 18px;
+
+margin: 2px;
+color: #8e9391;
+font-weight: 300px;
+
+  
+`
+const MiddlePartSecureHeading2 = styled.h4`
+font-size: 18px;
+
+margin: 2px;
+color: #8e9391;
+font-weight: 300px;
+
+  
+`
+const MiddlePartSecureImg = styled.img`
+height: 60px;
+width: 60px;
+
+
+  
+`
 
 
 function MiddleContainer() {
@@ -166,7 +228,7 @@ function MiddleContainer() {
 
                         </MiddleFormPartDivHeading>
                     
-                        <MiddlePartFormInput placeholder='  Name on card'>
+                        <MiddlePartFormInput placeholder='   Name on card'>
 
                         </MiddlePartFormInput>
 
@@ -177,7 +239,7 @@ function MiddleContainer() {
                         <MiddleFormPartDivHeading>
                             Card Number
                         </MiddleFormPartDivHeading>
-                        <MiddlePartFormInput placeholder='  XXXX XXXX XXXX XXXX'>
+                        <MiddlePartFormInput placeholder='   XXXX XXXX XXXX XXXX'>
                             
                         </MiddlePartFormInput>
 
@@ -190,7 +252,7 @@ function MiddleContainer() {
                                 Expiry Date
 
                             </MiddleFormPartDivHeading>
-                            <MiddlePartFormInputMini placeholder='  MM?YY'>
+                            <MiddlePartFormInputMini placeholder='   MM/YY'>
 
                             </MiddlePartFormInputMini>
                         </MiddleFormPartDivItem>
@@ -199,7 +261,7 @@ function MiddleContainer() {
                                 Security Code
 
                             </MiddleFormPartDivHeading>
-                            <MiddlePartFormInputMini>
+                            <MiddlePartFormInputMini placeholder='   CVV/CVC'>
 
                             </MiddlePartFormInputMini>
                         </MiddleFormPartDivItem>
@@ -227,6 +289,18 @@ function MiddleContainer() {
                     </MiddlePartCheckBoxHeading>
 
                 </MiddlePartCheckBoxContainer>
+                <MiddlePartSecureContainer>
+                    <MiddlePartSecureDiv>
+                        <MiddlePartSecureImg src={Lock}></MiddlePartSecureImg>
+                        <MiddlePartSecureHeadingDiv>
+                            <MiddlePartSecureHeading>Secure</MiddlePartSecureHeading>
+                            <MiddlePartSecureHeading2>Connection</MiddlePartSecureHeading2>
+
+                        </MiddlePartSecureHeadingDiv>
+                        
+
+                    </MiddlePartSecureDiv>
+                </MiddlePartSecureContainer>
                 
                 
                 
